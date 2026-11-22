@@ -97,3 +97,20 @@ port/
 │   └── .env.example         # Server environment template
 └── package.json             # Root development and build scripts
 ```
+
+## ☁️ Deploy to Render
+
+This repository includes a Render Blueprint in `render.yaml` for deploying the
+React client and Express API together as one web service.
+
+1. In Render, choose **New → Blueprint** and connect
+   `https://github.com/krishnapawar7/krishna-portfolio`.
+2. Select the repository's `main` branch and apply the `krishna-portfolio`
+   Blueprint.
+3. Render builds the client, starts the Express server, and checks
+   `/api/health`.
+
+The app can start without MongoDB, but contact messages are stored only in
+memory in that mode. To persist them, set `MONGODB_URI` in the Render service
+environment to a MongoDB Atlas connection string. Never commit production
+credentials to the repository.

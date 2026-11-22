@@ -1,0 +1,28 @@
+{
+  "name": "krishna-pawar-mern-portfolio",
+  "version": "2.0.0",
+  "description": "Full-Stack MERN (MongoDB, Express, React, Node.js) Portfolio for Krishna Pawar",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "server": "node --watch server/src/server.js",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "install:all": "npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "portfolio",
+    "fresher",
+    "full-stack",
+    "gemini-api",
+    "rag"
+  ],
+  "author": "Krishna Pawar <krishpawar214@gmail.com>",
+  "license": "MIT"
+}

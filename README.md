@@ -114,3 +114,14 @@ The app can start without MongoDB, but contact messages are stored only in
 memory in that mode. To persist them, set `MONGODB_URI` in the Render service
 environment to a MongoDB Atlas connection string. Never commit production
 credentials to the repository.
+
+## ▲ Deploy to Vercel
+
+The Vercel configuration builds the React app as static assets and exposes the
+Express API through a serverless function.
+
+1. Import `https://github.com/krishnapawar7/krishna-portfolio` in Vercel.
+2. Keep the project root at the repository root and deploy using the included
+   `vercel.json` settings.
+3. Optionally set `MONGODB_URI` in the Vercel project environment variables to
+   a MongoDB Atlas connection string to persist contact messages.
